@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Auto4Sale | Datsun GO+</title>
+        <link rel="stylesheet" href="style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="vehicles-for-sale.html">Vehicles for sale</a></li>
+            </ul>
+        </div>
+        
+        <div id="header">
+            <h1>Auto4Sale</h1>
+            <p>THE BEST CAR DEALS YOU WILL FIND</p>
+        </div>
+        
+        <br/>
+            
+        <!-- banner-->
+            <div class="content" id="shift-in">
+                <h2 class="page-heading">Datsun GO+</h2>
+                    <img src="https://www-asia.datsun-cdn.net/content/dam/Datsun/IN/vehicles/go_plus/product_code/0_all_new/GO%2BImages07102018/Go%2B3000x1328/GO%2B-3000x1328-(C).jpg.ximg.l_12_m.smart.jpg" class="info-page-image" height="250px"/>
+                    
+                
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                
+                <p>The country is changing and so are the familyies within the country. More open to make new connections and more togetherness. That’s why, we at Datsun have designed the Datsun GO+ with 5+2 flexi seats. So that you don’t have to leave anyone behind.Turn heads on the road with dazzling range of new generation features. Enjoy your favorite music, navigate your way, stay connected and experience maximize comfort with anti fatigue seats. Powered by Japanese Engineering, the new Datsun GO+ comes with advanced technological features. The advanced safety features of the new Datsun GO+ ensure that every drive is a safe one for you.</p>
+                
+                <br/>
+                
+                <div id="car-info">
+                    <p>15sec &nbsp;&nbsp;&nbsp;&nbsp; |</p>
+                    <p class="p-car-info">0-100 km/h</p>
+                </div>
+                
+                <div id="car-info">
+                    <p>60kW &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</p>
+                    <p class="p-car-info">Engine Performance</p>
+                </div>
+                
+                <div id="car-info">
+                    <p>1.1l/100km</p>
+                    <p class="p-car-info">Fuel Consumption (combined)</p>
+                </div>
+                
+                <br/><br/><br/><br/><br/><br/><br/><br/>
+                
+                <div id="car-info-price">
+                    <p>R 93,370.00 &nbsp;&nbsp;&nbsp;&nbsp; | R 2000</p>
+                    <p class="p-car-info">Per Month &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Offer Price</p>
+                </div>
+                
+           
+            </div>
+        
+            
+            <div id="sidebar">
+                <h2>BUSINESS HOURS</h2>
+                <ul>
+                    <li>Monday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10:00 AM - 6:00 PM</li>
+                    <li>Tuesday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10:00 AM - 6:00 PM</li>
+                    <li>Wednesday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10:00 AM - 6:00 PM</li>
+                    <li>Thursday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10:00 AM - 6:00 PM</li>
+                    <li>Friday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10:00 AM - 5:30 PM</li>
+                    <li>Saturday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Closed (We're Sabbath Keepers)</li>
+                    <li>Sunday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10:00 AM - 5:30 PM</li>
+                </ul>
+            </div>
+        <div id="container">
+            
+            <!-- Next and previous buttons -->
+                <a onclick="plusSlides(-1)" id="prev">&#10094;</a>
+                <a onclick="plusSlides(1)" id="next">&#10095;</a>
+            
+                <div class="mySlides">
+                    <img src="https://www-asia.datsun-cdn.net/content/dam/Datsun/IN/vehicles/go_plus/product_code/0_all_new/GO%2BImages07102018/Go%2B3000x1328/GO%2B-3000x1328-(C).jpg.ximg.l_12_m.smart.jpg"/>
+                </div>
+                <div class="mySlides">
+                    <img src="https://www-asia.datsun-cdn.net/content/dam/Datsun/IN/vehicles/go_plus/product_code/0_all_new/Banner/Images31019/GO%2B-CVT-Interior_600x337-px.jpg.ximg.l_6_m.smart.jpg"/>
+                </div>
+                <div class="mySlides">
+                    <img src="https://www.datsun.co.in/content/dam/Datsun/IN/360-visualizer/en_IN/vehicles/Go+/360_Corrected/Brown/8.jpg.ximg.c1h.360.jpg"/>
+                </div>
+            
+
+        </div>
+       
+        <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                }
+            </script>
+        
+    <br/>
+        <div id="footer">
+            <div id="box1">
+                <h2>Latest Posts</h2>
+                <ul class="styled">
+                    <li><a href="#">Stunning pics!</a></li>
+                    <li><a href="#">Amazing</a></li>
+                    <li><a href="#">I love these rides!</a></li>
+                    <li><a href="#">Awesome stuff</a></li>
+                    <li><a href="#">Great stuff - keep it going</a></li>
+                    <li><a href="#">The best cars you'll ever see</a></li>
+                </ul>
+            </div>
+            
+            <div id="box2">
+                <h2>Popular Links</h2>
+                <ul class="styled">
+                    <li><a href="https://bestsellingcarsblog.com/">Best selling cars</a></li>
+                    <li><a href="https://www.iol.co.za/motoring/industry-news/these-were-south-africas-30-best-selling-cars-and-suvs-in-may-2022-which-saw-the-suzuki-swift-top-the-list-36037293-8a3b-4a0d-9a45-ce11ea75d372">Most popular cars in SA</a></li>
+                    <li><a href="https://za.pinterest.com/leemu613/car-design/">Car designs on Pinterest</a></li>
+                    <li><a href="https://www.caranddriver.com/features/a26962316/how-a-car-works/">Car and Driver</a></li>
+                    <li><a href="https://www.fmm.co.za/">Car musum</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Car">Wikipedia</a></li>
+                </ul>
+            </div>
+            
+            <div id="box3">
+                <h2>Follow Us</h2>
+                <p>Connect with us to stay informed...</p>
+                <a href="#"><img src="images/twitter.png" height="30"/></a>
+                <a href="#"><img src="images/facebook.png" height="30"/></a>
+                <a href="#"><img src="images/instagram.png" height="30"/></a>
+                <a href="#"><img src="images/pinterest.png" height="30"/></a>
+            </div>
+            
+        </div>
+        
+        <div id="copyright">
+            <p>&copy; All Rights Reserved   |   Designed By Israel</p>
+        </div>
+        
+        
+    
+    </body>
+</html>

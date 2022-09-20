@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Auto4Sale | Chevrolet Spark</title>
+        <link rel="stylesheet" href="style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="vehicles-for-sale.html">Vehicles for sale</a></li>
+            </ul>
+        </div>
+        
+        <div id="header">
+            <h1>Auto4Sale</h1>
+            <p>THE BEST CAR DEALS YOU WILL FIND</p>
+        </div>
+        
+        <br/>
+            
+        <!-- banner-->
+            <div class="content" id="shift-in">
+                <h2 class="page-heading">Chevrolet Spark</h2>
+                    <img src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/chevrolet-spark-static.jpg?itok=3OkIMQY2" class="info-page-image" height="250px"/>
+                    
+                
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                
+                <p>Ever heard the saying, “Get in where you fit in?” Well, you’ll fit in just about anywhere thanks to the easy maneuverability of Spark. And you’ll look good doing it. Gain major style points and street cred in this small car.</p>
+                    <ul>
+                        <li>Two-tone painted roof</li>
+                        <li>Black-painted grille</li>
+                        <li>Front and rear Black bowtie emblems</li>
+                        <li>Accent-color mirror caps</li>
+                        <li>Black grille surround</li>
+                        <li>Accent-color daytime running lamp bezels</li>
+                        <li>15-inch Black-painted alloy wheels with machined finish</li>
+                    </ul>
+
+                <br/>
+                
+                <div id="car-info">
+                    <p>8sec &nbsp;&nbsp;&nbsp;&nbsp; |</p>
+                    <p class="p-car-info">0-100 km/h</p>
+                </div>
+                
+                <div id="car-info">
+                    <p>100kW &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</p>
+                    <p class="p-car-info">Engine Performance</p>
+                </div>
+                
+                <div id="car-info">
+                    <p>1l/100km</p>
+                    <p class="p-car-info">Fuel Consumption (combined)</p>
+                </div>
+                
+                <br/><br/><br/><br/><br/><br/><br/><br/>
+                
+                <div id="car-info-price">
+                    <p>R 274047.75&nbsp;&nbsp;&nbsp;&nbsp; | R 5809.32</p>
+                    <p class="p-car-info">Per Month &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Offer Price</p>
+                </div>
+                
+           
+            </div>
+        
+            
+            <div id="sidebar">
+                <h2>BUSINESS HOURS</h2>
+                <ul>
+                    <li>Monday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10:00 AM - 6:00 PM</li>
+                    <li>Tuesday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10:00 AM - 6:00 PM</li>
+                    <li>Wednesday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10:00 AM - 6:00 PM</li>
+                    <li>Thursday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10:00 AM - 6:00 PM</li>
+                    <li>Friday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10:00 AM - 5:30 PM</li>
+                    <li>Saturday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Closed (We're Sabbath Keepers)</li>
+                    <li>Sunday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10:00 AM - 5:30 PM</li>
+                </ul>
+            </div>
+        <div id="container">
+            
+            <!-- Next and previous buttons -->
+                <a onclick="plusSlides(-1)" id="prev">&#10094;</a>
+                <a onclick="plusSlides(1)" id="next">&#10095;</a>
+            
+                <div class="mySlides">
+                    <img src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/chevrolet-spark-static.jpg?itok=3OkIMQY2"/>
+                </div>
+                <div class="mySlides">
+                    <img src="https://www.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2022/cars/spark/colorizer/01-images/interior/2022-spark-colorizer-int-01.jpg?imwidth=1200"/>
+                </div>
+                <div class="mySlides">
+                    <img src="https://thumbs.dreamstime.com/b/chevrolet-spark-37459694.jpg"/>
+                </div>
+            
+
+        </div>
+       
+        <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                }
+            </script>
+        
+    <br/>
+        <div id="footer">
+            <div id="box1">
+                <h2>Latest Posts</h2>
+                <ul class="styled">
+                    <li><a href="#">Stunning pics!</a></li>
+                    <li><a href="#">Amazing</a></li>
+                    <li><a href="#">I love these rides!</a></li>
+                    <li><a href="#">Awesome stuff</a></li>
+                    <li><a href="#">Great stuff - keep it going</a></li>
+                    <li><a href="#">The best cars you'll ever see</a></li>
+                </ul>
+            </div>
+            
+            <div id="box2">
+                <h2>Popular Links</h2>
+                <ul class="styled">
+                    <li><a href="https://bestsellingcarsblog.com/">Best selling cars</a></li>
+                    <li><a href="https://www.iol.co.za/motoring/industry-news/these-were-south-africas-30-best-selling-cars-and-suvs-in-may-2022-which-saw-the-suzuki-swift-top-the-list-36037293-8a3b-4a0d-9a45-ce11ea75d372">Most popular cars in SA</a></li>
+                    <li><a href="https://za.pinterest.com/leemu613/car-design/">Car designs on Pinterest</a></li>
+                    <li><a href="https://www.caranddriver.com/features/a26962316/how-a-car-works/">Car and Driver</a></li>
+                    <li><a href="https://www.fmm.co.za/">Car musum</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Car">Wikipedia</a></li>
+                </ul>
+            </div>
+            
+            <div id="box3">
+                <h2>Follow Us</h2>
+                <p>Connect with us to stay informed...</p>
+                <a href="#"><img src="images/twitter.png" height="30"/></a>
+                <a href="#"><img src="images/facebook.png" height="30"/></a>
+                <a href="#"><img src="images/instagram.png" height="30"/></a>
+                <a href="#"><img src="images/pinterest.png" height="30"/></a>
+            </div>
+            
+        </div>
+        
+        <div id="copyright">
+            <p>&copy; All Rights Reserved   |   Designed By Israel</p>
+        </div>
+        
+        
+    
+    </body>
+</html>

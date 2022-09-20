@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Auto4Sale | Mercedes AMG SL Roadster</title>
+        <link rel="stylesheet" href="style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="vehicles-for-sale.html">Vehicles for sale</a></li>
+            </ul>
+        </div>
+        
+        <div id="header">
+            <h1>Auto4Sale</h1>
+            <p>THE BEST CAR DEALS YOU WILL FIND</p>
+        </div>
+        
+        <br/>
+            
+        <!-- banner-->
+            <div class="content" id="shift-in">
+                <h2 class="page-heading">Mercedes AMG SL Roadster</h2>
+                    <img src="https://www.mercedes-benzcaribbean.com/assets/themes/mb-caribbean/media/news/2022/01/the-new-Mercedes-AMG-SL-Roadster-1.jpg" class="info-page-image" height="250px"/>
+                    
+                
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                
+                <p>The new Mercedes-AMG SL as part of an automotive legend makes clear statements: For passionate performance. For exclusive comfort. And of course for irresistible design. Open the fabric roof and experience exciting voyages of discovery and unforgettable moments of pleasure. Quality time with yourself.Owing to supply shortages, availability of the communication module (LTE) for certain vehicles may be temporarily restricted. This situation affects Mercedes me connect services in particular, including the emergency call system (eCall). Regularly updated information on this issue is available from Mercedes-Benz dealers. For almost seven decades, with every one of its generations, the Mercedes-Benz SL has set new standards in the world of cultivated luxury sports cars. The new Mercedes-AMG SL will take this unique tradition of irresistible design and outstanding technology into the future and define new highlights.</p>
+                <br/>
+                
+                <div id="car-info">
+                    <p>5sec &nbsp;&nbsp;&nbsp;&nbsp; |</p>
+                    <p class="p-car-info">0-100 km/h</p>
+                </div>
+                
+                <div id="car-info">
+                    <p>410kW &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |</p>
+                    <p class="p-car-info">Engine Performance</p>
+                </div>
+                
+                <div id="car-info">
+                    <p>1.45l/100km</p>
+                    <p class="p-car-info">Fuel Consumption (combined)</p>
+                </div>
+                
+                <br/><br/><br/><br/><br/><br/><br/><br/>
+                
+                <div id="car-info-price">
+                    <p>R 1 800 357&nbsp;&nbsp;&nbsp;&nbsp; | R 37600</p>
+                    <p class="p-car-info">Per Month &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Offer Price</p>
+                </div>
+                
+           
+            </div>
+        
+            
+            <div id="sidebar">
+                <h2>BUSINESS HOURS</h2>
+                <ul>
+                    <li>Monday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10:00 AM - 6:00 PM</li>
+                    <li>Tuesday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10:00 AM - 6:00 PM</li>
+                    <li>Wednesday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10:00 AM - 6:00 PM</li>
+                    <li>Thursday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10:00 AM - 6:00 PM</li>
+                    <li>Friday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10:00 AM - 5:30 PM</li>
+                    <li>Saturday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Closed (We're Sabbath Keepers)</li>
+                    <li>Sunday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10:00 AM - 5:30 PM</li>
+                </ul>
+            </div>
+        <div id="container">
+            
+            <!-- Next and previous buttons -->
+                <a onclick="plusSlides(-1)" id="prev">&#10094;</a>
+                <a onclick="plusSlides(1)" id="next">&#10095;</a>
+            
+                <div class="mySlides">
+                    <img src="https://www.mercedes-benzcaribbean.com/assets/themes/mb-caribbean/media/news/2022/01/the-new-Mercedes-AMG-SL-Roadster-1.jpg"/>
+                </div>
+                <div class="mySlides">
+                    <img src="https://www.mercedes-benz.co.za/passengercars/mercedes-benz-cars/models/sl/roadster-r232/pad/equipment-comparison/_jcr_content/comparisonslider/par/comparisonslide/exteriorImage.MQ6.12.20211028133911.jpeg"/>
+                </div>
+                <div class="mySlides">
+                    <img src="https://www.mercedes-benz.co.za/passengercars/mercedes-benz-cars/models/sl/roadster-r232/pad/performance-and-comfort/_jcr_content/par/hotspotcontainer/hotspotsimple/image.MQ6.12.20211028141915.jpeg"/>
+                </div>
+            
+
+        </div>
+       
+        <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                }
+            </script>
+        
+    <br/>
+        <div id="footer">
+            <div id="box1">
+                <h2>Latest Posts</h2>
+                <ul class="styled">
+                    <li><a href="#">Stunning pics!</a></li>
+                    <li><a href="#">Amazing</a></li>
+                    <li><a href="#">I love these rides!</a></li>
+                    <li><a href="#">Awesome stuff</a></li>
+                    <li><a href="#">Great stuff - keep it going</a></li>
+                    <li><a href="#">The best cars you'll ever see</a></li>
+                </ul>
+            </div>
+            
+            <div id="box2">
+                <h2>Popular Links</h2>
+                <ul class="styled">
+                    <li><a href="https://bestsellingcarsblog.com/">Best selling cars</a></li>
+                    <li><a href="https://www.iol.co.za/motoring/industry-news/these-were-south-africas-30-best-selling-cars-and-suvs-in-may-2022-which-saw-the-suzuki-swift-top-the-list-36037293-8a3b-4a0d-9a45-ce11ea75d372">Most popular cars in SA</a></li>
+                    <li><a href="https://za.pinterest.com/leemu613/car-design/">Car designs on Pinterest</a></li>
+                    <li><a href="https://www.caranddriver.com/features/a26962316/how-a-car-works/">Car and Driver</a></li>
+                    <li><a href="https://www.fmm.co.za/">Car musum</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Car">Wikipedia</a></li>
+                </ul>
+            </div>
+            
+            <div id="box3">
+                <h2>Follow Us</h2>
+                <p>Connect with us to stay informed...</p>
+                <a href="#"><img src="images/twitter.png" height="30"/></a>
+                <a href="#"><img src="images/facebook.png" height="30"/></a>
+                <a href="#"><img src="images/instagram.png" height="30"/></a>
+                <a href="#"><img src="images/pinterest.png" height="30"/></a>
+            </div>
+            
+        </div>
+        
+        <div id="copyright">
+            <p>&copy; All Rights Reserved   |   Designed By Israel</p>
+        </div>
+        
+        
+    
+    </body>
+</html>
